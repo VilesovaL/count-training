@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Тренажёр</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <h1 align="center" style="font-family:sans-serif"><font color="#031323">Тренажёр</h1>
+  <h2 align="center" style="font-family:sans-serif">Устного счёта</h2>
+  <div class="scoreBox" align="center">
+    <label>Уровень: </label>
+    <label id="level">0</label>
+  </div>
+
+  <div  class="modeBar" align="center">
+    <div class="modeBar">
+    <button class="modeBar" onclick="changeMode(0)">сложение</button>
+    <button class="modeBar" onclick="changeMode(1)">вычитание</button>
+    <button class="modeBar" onclick="changeMode(2)">умножение</button>
+    <button class="modeBar" onclick="changeMode(3)">деление</button>
+    </div>
+  </div>
+
+  <div class="training" align="center">
+    <label id="question"></label>
+    <div  class="answerBar">
+    <button class="answerBtn" onclick="checkAnswer(0)"></button>
+    <button class="answerBtn" onclick="checkAnswer(1)"></button>
+    <br>
+    <button class="answerBtn" onclick="checkAnswer(2)"></button>
+    <button class="answerBtn" onclick="checkAnswer(3)"></button>
+    </div>
+  </div>
+
+  </body>
+</html>
